@@ -1,0 +1,85 @@
+/* Basic styling for calculator */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 350px; /* Increased width */
+  background: #1e1e1e; /* Dark grey background */
+  padding: 30px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px; /* Font size for title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #f2f5f2; /* Title text color */
+  font-weight: bold;
+}
+
+.display {
+  width: 100%;
+  height: 60px; /* Increased height */
+  border: 1px solid #f3f1f1;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 24px; /* Increased font size */
+  margin-bottom: 20px; /* Increased margin */
+  background-color: #ece4e4; /* Darker background color */
+  color: #1b1b1b; /* White text color */
+}
+
+.buttons {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  gap: 15px; /* Increased space between buttons */
+}
+
+.button {
+  height: 60px; /* Increased height */
+  border: none;
+  border-radius: 5px;
+  background: #ffffff; /* Green background */
+  color: #131313; /* White text color */
+  font-size: 20px; /* Increased font size */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background: #80f185;
+  transform: scale(1.05);
+}
+
+.button.special {
+  background: #dcdcdc; /* Red background */
+}
+
+.button.special:hover {
+  background: #f38da0;
+}
+
+/* Styles for operation buttons */
+.operation {
+  background: #fbfaf9; /* Orange background */
+}
+
+.operation:hover {
+  background: #fb8c00;
+}
+
+.button.equal {
+  grid-column: span 2; /* Make = button span 2 columns */
+  background: #ffaa3b; /* Yellow background for = button */
+  color: #000; /* Black text color */
+}
